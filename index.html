@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>FarolEdu — Aprendizado iluminado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <nav class="navbar__inner" aria-label="Navegação principal">
+        <a href="#inicio" class="navbar__logo-button" aria-label="Ir para a página inicial">
+          <img src="assets/Logo.png" alt="FarolEdu" class="navbar__logo" />
+        </a>
+
+        <ul class="navbar__links" id="primary-navigation">
+          <li><a class="navbar__link is-active" href="#inicio">Início</a></li>
+          <li><a class="navbar__link" href="#sobre">Sobre</a></li>
+          <li><a class="navbar__link" href="#oferecer-aula">Oferecer aula</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a class="navbar__action" href="#login">Entrar</a>
+          <a class="navbar__action navbar__action--primary" href="#cadastrar">Cadastrar</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-info">
+            <span class="hero-eyebrow">Aprendizado iluminado por bons encontros</span>
+            <h1 class="hero-title">
+              Dê o próximo passo no seu aprendizado com o <span>FarolEdu</span>.
+            </h1>
+            <p class="hero-subtitle">
+              Conectamos alunos e professores particulares em todo o Brasil, com aulas presenciais e online que se encaixam na sua rotina.
+            </p>
+
+            <ul class="hero-highlights">
+              <li>Professores em mais de 100 cidades</li>
+              <li>Todas as matérias: escolar, idiomas, música e mais</li>
+              <li>Aulas personalizadas para todo nível e orçamento</li>
+            </ul>
+
+            <form class="hero-search" action="#" method="get">
+              <div class="hero-field">
+                <input type="text" name="assunto" placeholder="Busque Matemática, inglês, música..." />
+              </div>
+              <div class="hero-field">
+                <input type="text" name="local" placeholder="Local das aulas ou online" />
+              </div>
+              <button type="submit" class="hero-search-submit">Pesquisar</button>
+            </form>
+
+            <div class="hero-filters">
+              <button type="button" class="hero-filter">Perto de mim</button>
+              <button type="button" class="hero-filter">Online</button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              class="hero-visual-img"
+              src="assets/ImagemFarol.png"
+              alt="Farol apontando caminhos para novos aprendizados"
+            />
+            <div class="hero-visual-floor"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="available-classes">
+      <div class="container">
+        <h2 class="classes-title">
+          Aulas disponíveis <span>perto de você</span>
+        </h2>
+
+        <div class="classes-summary">
+          <span class="summary-label">Filtros aplicados:</span>
+          <span class="summary-pill">Assunto — Matemática</span>
+          <span class="summary-pill">Local — São Paulo</span>
+          <span class="summary-pill highlight">Online</span>
+        </div>
+
+        <div class="teacher-grid">
+          <article class="teacher-card">
+            <div class="card-header">
+              <div class="teacher-avatar">M</div>
+              <div class="subject-info">
+                <h3 class="subject">Matemática</h3>
+                <span class="level">Aulas online</span>
+                <span class="description">Ref.: reforço escolar e preparação ENEM</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Professor</span>
+                  <span class="meta-value">Ana Souza</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Local</span>
+                  <span class="meta-value">São Paulo</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Investimento</span>
+                  <span class="meta-price">R$ 65,00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-secondary">Ver Aula</a>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <div class="card-header">
+              <div class="teacher-avatar">I</div>
+              <div class="subject-info">
+                <h3 class="subject">Inglês</h3>
+                <span class="level">Aulas presenciais</span>
+                <span class="description">Conversação e TOEFL</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Professor</span>
+                  <span class="meta-value">Carlos Lima</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Local</span>
+                  <span class="meta-value">Rio de Janeiro</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Investimento</span>
+                  <span class="meta-price">R$ 80,00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-secondary">Ver Aula</a>
+            </div>
+          </article>
+
+          <article class="teacher-card">
+            <div class="card-header">
+              <div class="teacher-avatar">V</div>
+              <div class="subject-info">
+                <h3 class="subject">Violão</h3>
+                <span class="level">Modelo híbrido</span>
+                <span class="description">Iniciante ao intermediário</span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <div class="meta-item">
+                  <span class="meta-label">Professor</span>
+                  <span class="meta-value">Bianca Reis</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Local</span>
+                  <span class="meta-value">Curitiba</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Investimento</span>
+                  <span class="meta-price">Valor a combinar</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-secondary">Ver Aula</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-shell">
+          <div class="about-intro">
+            <span class="about-eyebrow">Sobre o FarolEdu</span>
+            <h2>Um ecossistema feito para conectar pessoas que ensinam e aprendem.</h2>
+            <p>
+              Apoiamos professores independentes e instituições locais a construírem experiências de ensino inspiradoras,
+              enquanto estudantes encontram caminhos personalizados para evoluir rápido.
+            </p>
+
+            <div class="about-stats">
+              <div class="about-stat">
+                <strong>35 mil+</strong>
+                <span>alunos impactados</span>
+              </div>
+              <div class="about-stat">
+                <strong>2.800</strong>
+                <span>professores cadastrados</span>
+              </div>
+              <div class="about-stat">
+                <strong>120</strong>
+                <span>cidades com aulas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>Foco na relação humana</h3>
+              <p>Priorizamos afinidade, objetivos e ritmo de aprendizagem para o melhor encontro entre aluno e professor.</p>
+            </article>
+            <article class="about-card">
+              <h3>Segurança e qualidade</h3>
+              <p>Perfis verificados, avaliações recorrentes e suporte dedicado para garantir aulas confiáveis.</p>
+            </article>
+            <article class="about-card">
+              <h3>Flexibilidade real</h3>
+              <p>Agenda inteligente, aulas presenciais ou online e pacotes personalizados para sua rotina.</p>
+            </article>
+            <article class="about-card">
+              <h3>Resultados comprovados</h3>
+              <p>Programas especiais e acompanhamento próximo de progresso para suas metas.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teacher-section" id="oferecer-aula">
+      <div class="container">
+        <div class="teacher-shell">
+          <div class="teacher-copy">
+            <span class="teacher-eyebrow">Transforme conhecimento em impacto real</span>
+            <h2>É professor? <span>Ofereça suas aulas no FarolEdu</span>.</h2>
+            <p>Crie seu perfil, defina disponibilidade, modalidades e receba solicitações de alunos que combinam com sua experiência.</p>
+
+            <ul class="teacher-highlights">
+              <li>Perfil completo com portfólio, disciplinas e valores personalizados.</li>
+              <li>Agenda inteligente para controlar horários e confirmar aulas.</li>
+              <li>Suporte a aulas híbridas com ferramentas digitais.</li>
+            </ul>
+
+            <a href="#cadastrar" class="teacher-cta">Cadastrar minha aula</a>
+          </div>
+
+          <div class="teacher-visual">
+            <div class="teacher-card">
+              <div class="teacher-card-header">
+                <span class="teacher-avatar">CM</span>
+                <div>
+                  <strong>Camila Martins</strong>
+                  <small>Matemática &amp; ENEM</small>
+                </div>
+              </div>
+
+              <div class="teacher-card-body">
+                <div class="teacher-stat">Perfil verificado</div>
+                <p>+120 alunos aprovados no último ano com aulas online personalizadas.</p>
+              </div>
+
+              <div class="teacher-card-footer">
+                <div>
+                  <strong>R$ 65</strong>
+                  <span>/hora</span>
+                </div>
+                <button type="button">Solicitar aula</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo-pill" aria-label="FarolEdu">
+            <img src="assets/Logo.png" alt="FarolEdu" class="footer-logo-icon" />
+          </div>
+          <p class="footer-slogan">
+            Conectando alunos e professores com experiências de aprendizado personalizadas.
+          </p>
+        </div>
+
+        <div class="footer-actions">
+          <div class="footer-links">
+            <a href="#inicio">Início</a>
+            <a href="#oferecer-aula">Oferecer aula</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+          </div>
+          <div class="footer-links">
+            <a href="#politica">Política de privacidade</a>
+            <a href="#termos">Termos de uso</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 FarolEdu. Todos os direitos reservados.</span>
+        <div class="footer-legals">
+          <a href="#politica">Política de privacidade</a>
+          <a href="#termos">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
